@@ -1,0 +1,19 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% trans "Checkout" %}{% endblock %}
+{% block content %}
+<section class="page-header py-5"><div class="container text-center text-white"><h1 class="display-5 fw-bold">{% trans "Checkout" %}</h1></div></section>
+<section class="py-5"><div class="container"><div class="row g-5">
+<div class="col-lg-7"><h4 class="fw-bold mb-4">{% trans "Shipping Information" %}</h4>
+<form method="post">{% csrf_token %}{% if form.errors %}<div class="alert alert-danger">{% for field in form %}{% for err in field.errors %}{{ err }}<br>{% endfor %}{% endfor %}{% for err in form.non_field_errors %}{{ err }}<br>{% endfor %}</div>{% endif %}<div class="row g-3">
+<div class="col-sm-6"><label>{% trans "Contact Name" %}</label><input name="name" class="form-control" required></div>
+<div class="col-sm-6"><label>{% trans "Company" %}</label><input name="company" class="form-control"></div>
+<div class="col-sm-6"><label>{% trans "Email" %}</label><input name="email" class="form-control" required></div>
+<div class="col-sm-6"><label>{% trans "Phone" %}</label><input name="phone" class="form-control"></div>
+<div class="col-12"><label>{% trans "Address" %}</label><textarea name="address" rows="3" class="form-control" required></textarea></div>
+<div class="col-sm-6"><label>{% trans "City" %}</label><input name="city" class="form-control"></div>
+<div class="col-sm-6"><label>{% trans "Country" %}</label><input name="country" class="form-control" value="China"></div>
+</div><button type="submit" class="btn btn-accent btn-lg mt-4 w-100">{% trans "Place Order (Mock Payment)" %}</button></form></div>
+<div class="col-lg-5"><div class="card border-0 bg-light p-4"><h5 class="fw-bold mb-4">{% trans "Order Summary" %}</h5>
+{% for item in cart.items.all %}<div class="d-flex justify-content-between align-items-center mb-3"><div><h6 class="mb-0 small">{{ item.product.name_en }}</h6><small class="text-muted">x{{ item.quantity }}</small></div><span>${{ item.subtotal|floatformat:2 }}</span></div>{% endfor %}
+<hr><div class="d-flex justify-content-between fw-bold"><span>{% trans "Total" %}:</span><span class="text-accent">${{ cart_total|floatformat:2 }}</span></div></div></div>
+</div></div></section>{% endblock %}

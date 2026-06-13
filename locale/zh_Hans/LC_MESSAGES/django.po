@@ -1,0 +1,367 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: django-trade-site\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Home"
+msgstr "首页"
+
+msgid "Products"
+msgstr "产品"
+
+msgid "About Us"
+msgstr "关于我们"
+
+msgid "Contact"
+msgstr "联系我们"
+
+msgid "Shopping Cart"
+msgstr "购物车"
+
+msgid "Checkout"
+msgstr "结算"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Your cart is empty"
+msgstr "您的购物车是空的"
+
+msgid "Browse our products and add items to your cart"
+msgstr "浏览产品并加入购物车"
+
+msgid "Browse Products"
+msgstr "浏览产品"
+
+msgid "Continue Shopping"
+msgstr "继续购物"
+
+msgid "Proceed to Checkout"
+msgstr "去结算"
+
+msgid "Place Order (Mock Payment)"
+msgstr "下单（模拟支付）"
+
+msgid "Order Summary"
+msgstr "订单摘要"
+
+msgid "Shipping Information"
+msgstr "收货信息"
+
+msgid "Contact Name"
+msgstr "联系人"
+
+msgid "Company"
+msgstr "公司"
+
+msgid "Email"
+msgstr "邮箱"
+
+msgid "Phone"
+msgstr "电话"
+
+msgid "Address"
+msgstr "地址"
+
+msgid "City"
+msgstr "城市"
+
+msgid "Country"
+msgstr "国家"
+
+msgid "Your Name"
+msgstr "您的姓名"
+
+msgid "Product"
+msgstr "产品"
+
+msgid "Message"
+msgstr "留言"
+
+msgid "Send"
+msgstr "发送"
+
+msgid "Send Inquiry"
+msgstr "发送询盘"
+
+msgid "Quantity"
+msgstr "数量"
+
+msgid "Price"
+msgstr "价格"
+
+msgid "Subtotal"
+msgstr "小计"
+
+msgid "Total"
+msgstr "合计"
+
+msgid "Stock"
+msgstr "库存"
+
+msgid "Add to Cart"
+msgstr "加入购物车"
+
+msgid "View Products"
+msgstr "查看产品"
+
+msgid "View Details"
+msgstr "查看详情"
+
+msgid "Details"
+msgstr "详情"
+
+msgid "Order Placed Successfully!"
+msgstr "下单成功"
+
+msgid "Order Placed"
+msgstr "下单完成"
+
+msgid "Order Number"
+msgstr "订单编号"
+
+msgid "Order"
+msgstr "订单"
+
+msgid "Orders"
+msgstr "订单"
+
+msgid "View Order"
+msgstr "查看订单"
+
+msgid "Back to Home"
+msgstr "返回首页"
+
+msgid "My Orders"
+msgstr "我的订单"
+
+msgid "Enter your email to find orders"
+msgstr "输入您的邮箱查找订单"
+
+msgid "Product Categories"
+msgstr "产品分类"
+
+msgid "Featured Products"
+msgstr "精选产品"
+
+msgid "Get a Quote"
+msgstr "获取报价"
+
+msgid "Contact us for pricing and technical specifications"
+msgstr "联系我们获取报价和技术规格"
+
+msgid "Contact Us"
+msgstr "联系我们"
+
+msgid "Order Items"
+msgstr "订单项"
+
+msgid "Qty"
+msgstr "数量"
+
+msgid "Order Info"
+msgstr "订单信息"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Shipping Address"
+msgstr "收货地址"
+
+msgid "No products found."
+msgstr "未找到产品"
+
+msgid "Categories"
+msgstr "分类"
+
+msgid "Category"
+msgstr "分类"
+
+msgid "Search products..."
+msgstr "搜索产品..."
+
+msgid "Precision Manufacturing Solutions"
+msgstr "精密制造解决方案"
+
+msgid "CNC Machining Centers, CNC Lathes & EDM Machines for Global Industry"
+msgstr "为全球工业提供CNC加工中心、数控车床与电火花设备"
+
+msgid "Huaxin Precision Machinery"
+msgstr "华鑫精密机械有限公司"
+
+msgid "Precision Manufacturing, Globally Trusted"
+msgstr "精密制造，全球信赖"
+
+msgid "No.88 Industrial Ave, Chang'an, Dongguan, China"
+msgstr "广东省东莞市长安镇工业大道88号"
+
+msgid "No.88 Industrial Ave, Chang'an, Dongguan"
+msgstr "广东省东莞市长安镇工业大道88号"
+
+msgid "All Rights Reserved."
+msgstr "版权所有"
+
+msgid "Specifications"
+msgstr "规格参数"
+
+msgid "Description"
+msgstr "产品描述"
+
+msgid "Related Products"
+msgstr "相关产品"
+
+msgid "Why Choose Us"
+msgstr "我们的优势"
+
+msgid "High Precision"
+msgstr "高精度"
+
+msgid "Accuracy up to 0.002mm"
+msgstr "定位精度达0.002mm"
+
+msgid "Certified Quality"
+msgstr "品质认证"
+
+msgid "ISO 9001:2015 certified"
+msgstr "ISO 9001:2015认证"
+
+msgid "Global Service"
+msgstr "全球服务"
+
+msgid "20+ countries, 48h response"
+msgstr "覆盖20+国家，48小时响应"
+
+msgid "Positioning accuracy up to 0.002mm"
+msgstr "定位精度达0.002mm"
+
+msgid "Service network in 20+ countries"
+msgstr "服务网点覆盖20+国家"
+
+msgid "This is a demo. No actual payment will be processed."
+msgstr "这是演示站点，不会发生实际支付。"
+
+msgid "This is a demo."
+msgstr "这是演示站点"
+
+msgid "Founded in 2010, Huaxin Precision Machinery specializes in CNC machining centers, CNC lathes, and other high-end equipment. Products are exported to 30+ countries across Europe, America, and Southeast Asia. ISO 9001:2015 certified with 20+ national patents."
+msgstr "华鑫精密机械成立于2010年，专注于CNC加工中心、数控车床等高端装备制造。产品远销欧美、东南亚等30多个国家和地区。ISO 9001:2015认证，拥有20多项国家专利技术。"
+
+msgid "Founded in 2010, specializing in CNC machining centers, CNC lathes, and high-end equipment. Products exported to 30+ countries. ISO 9001:2015 certified with 20+ national patents."
+msgstr "成立于2010年，专注于CNC加工中心、数控车床等高端装备制造。产品远销30多个国家，通过ISO 9001:2015认证，拥有20多项国家专利。"
+
+msgid "Your inquiry has been received!"
+msgstr "您的询盘已收到"
+
+msgid "Product of Interest"
+msgstr "感兴趣的产品"
+
+msgid "Name"
+msgstr "姓名"
+
+msgid "Pending"
+msgstr "待付款"
+
+msgid "Paid"
+msgstr "已付款"
+
+msgid "Processing"
+msgstr "处理中"
+
+msgid "Shipped"
+msgstr "已发货"
+
+msgid "Delivered"
+msgstr "已签收"
+
+msgid "Cancelled"
+msgstr "已取消"
+
+msgid "Name (Chinese)"
+msgstr "名称（中文）"
+
+msgid "Name (English)"
+msgstr "名称（英文）"
+
+msgid "Category Image"
+msgstr "产品类别图片"
+
+msgid "Active"
+msgstr "启用"
+
+msgid "Main Image"
+msgstr "主图"
+
+msgid "Specs (Chinese)"
+msgstr "规格（中文）"
+
+msgid "Specs (English)"
+msgstr "规格（英文）"
+
+msgid "Description (Chinese)"
+msgstr "描述（中文）"
+
+msgid "Description (English)"
+msgstr "描述（英文）"
+
+msgid "Featured"
+msgstr "精选"
+
+msgid "Image"
+msgstr "图片"
+
+msgid "Customer"
+msgstr "客户"
+
+msgid "Customers"
+msgstr "客户"
+
+msgid "Unit Price"
+msgstr "单价"
+
+msgid "Order Item"
+msgstr "订单项"
+
+msgid "Inquiry"
+msgstr "询盘"
+
+msgid "Inquiries"
+msgstr "询盘"
+
+msgid "Product Image"
+msgstr "产品图片"
+
+msgid "Product Name"
+msgstr "产品名"
+
+msgid "Session"
+msgstr "会话"
+
+msgid "Cart"
+msgstr "购物车"
+
+msgid "Address (Chinese)"
+msgstr "地址（中文）"
+
+msgid "Address (English)"
+msgstr "地址（英文）"
+
+msgid "Default Address"
+msgstr "默认地址"
+
+msgid "Zip Code"
+msgstr "邮编"
+
+msgid "Categories"
+msgstr "分类"
+
+msgid "Products"
+msgstr "产品"
+
+msgid "Orders"
+msgstr "订单"
+
+msgid "Addresses"
+msgstr "地址"

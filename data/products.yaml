@@ -1,0 +1,54 @@
+categories:
+  - id: cnc
+    name_zh: CNC 加工中心
+    name_en: CNC Machining Centers
+    products:
+      - slug: vmc-850
+        name_zh: 立式加工中心 VMC-850
+        name_en: Vertical Machining Center VMC-850
+        price: 85000
+        stock: 10
+        specs_zh: "工作台: 1000x500mm | 主轴: 12000rpm"
+        specs_en: "Table: 1000x500mm | Spindle: 12000rpm"
+        desc_zh: 三轴线轨立式加工中心
+        desc_en: 3-axis linear guide VMC
+      - slug: hmc-630
+        name_zh: 卧式加工中心 HMC-630
+        name_en: Horizontal Machining Center HMC-630
+        price: 120000
+        stock: 5
+        specs_zh: "工作台: 630x630mm | 刀库: 60"
+        specs_en: "Table: 630x630mm | Tools: 60"
+        desc_zh: 卧式加工中心
+        desc_en: HMC for box-type parts
+      - slug: 5ax-800
+        name_zh: 五轴联动加工中心
+        name_en: 5-Axis Machining Center
+        price: 250000
+        stock: 3
+        specs_zh: "行程: 800x700x600mm | 主轴: 18000rpm"
+        specs_en: "Travel: 800x700x600mm | Spindle: 18000rpm"
+        desc_zh: 五轴联动加工
+        desc_en: 5-axis simultaneous machining
+  - id: lathe
+    name_zh: 数控车床
+    name_en: CNC Lathes
+    products:
+      - slug: cl-36
+        name_zh: 斜床身数控车床 CL-36
+        name_en: Slant Bed CNC Lathe CL-36
+        price: 35000
+        stock: 20
+        specs_zh: "回转直径: 360mm | 长度: 600mm"
+        specs_en: "Swing: 360mm | Length: 600mm"
+        desc_zh: 45度斜床身
+        desc_en: 45 degree slant bed
+      - slug: ckl-50
+        name_zh: 大型数控车床 CKL-50
+        name_en: Heavy-Duty CNC Lathe CKL-50
+        price: 68000
+        stock: 8
+        specs_zh: "回转直径: 500mm | 长度: 1500mm"
+        specs_en: "Swing: 500mm | Length: 1500mm"
+        desc_zh: 大功率主轴
+        desc_en: High-power spindle

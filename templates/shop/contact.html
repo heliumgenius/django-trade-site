@@ -1,0 +1,19 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% trans "Contact" %}{% endblock %}
+{% block content %}
+<section class="page-header py-5"><div class="container text-center text-white"><h1 class="display-5 fw-bold">{% trans "Contact" %}</h1></div></section>
+<section class="py-5"><div class="container"><div class="row g-5">
+<div class="col-lg-7"><h4 class="fw-bold mb-4">{% trans "Send Inquiry" %}</h4>
+{% if messages %}{% for m in messages %}<div class="alert alert-success">{{ m }}</div>{% endfor %}{% endif %}
+<form method="post">{% csrf_token %}{% if form.errors %}<div class="alert alert-danger">{% for field in form %}{% for err in field.errors %}{{ err }}<br>{% endfor %}{% endfor %}{% for err in form.non_field_errors %}{{ err }}<br>{% endfor %}</div>{% endif %}<div class="row g-3">
+<div class="col-sm-6"><label>{% trans "Your Name" %} *</label><input name="name" class="form-control" required></div>
+<div class="col-sm-6"><label>{% trans "Company" %}</label><input name="company" class="form-control"></div>
+<div class="col-sm-6"><label>{% trans "Email" %} *</label><input name="email" class="form-control" required></div>
+<div class="col-sm-6"><label>{% trans "Phone" %}</label><input name="phone" class="form-control"></div>
+<div class="col-12"><label>{% trans "Product" %}</label><input name="product" class="form-control"></div>
+<div class="col-12"><label>{% trans "Message" %} *</label><textarea name="message" rows="5" class="form-control" required></textarea></div>
+<div class="col-12"><button type="submit" class="btn btn-accent btn-lg">{% trans "Send" %}</button></div></div></form></div>
+<div class="col-lg-5"><div class="card border-0 bg-light p-4"><h5 class="fw-bold mb-4">{% trans "Huaxin Precision Machinery" %}</h5><hr>
+<p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>{% trans "No.88 Industrial Ave, Chang'an, Dongguan" %}</p>
+<p class="mb-2"><i class="bi bi-telephone text-primary me-2"></i>+86 769 8888 6666</p>
+<p class="mb-2"><i class="bi bi-envelope text-primary me-2"></i>info@huaxin-cnc.com</p></div></div></div></div></section>{% endblock %}

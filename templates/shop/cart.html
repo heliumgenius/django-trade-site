@@ -1,0 +1,22 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% trans "Shopping Cart" %}{% endblock %}
+{% block content %}
+<section class="page-header py-5"><div class="container text-center text-white"><h1 class="display-5 fw-bold">{% trans "Shopping Cart" %}</h1></div></section>
+<section class="py-5"><div class="container">
+{% if cart.items.all %}<div class="table-responsive"><table class="table align-middle">
+<thead class="bg-light"><tr><th>{% trans "Product" %}</th><th>{% trans "Price" %}</th><th>{% trans "Quantity" %}</th><th>{% trans "Subtotal" %}</th><th></th></tr></thead>
+<tbody>{% for item in cart.items.all %}<tr><td><div class="d-flex align-items-center">
+{% if item.product.image %}<img src="{{ item.product.image.url }}" class="me-3 rounded" style="width:60px;height:60px;object-fit:contain" alt="">{% endif %}
+<div><h6 class="mb-0">{{ item.product.name_en }}</h6><small class="text-muted">{{ item.product.name_zh }}</small></div></div></td>
+<td>${{ item.product.price|floatformat:2 }}</td>
+<td><form method="post" action="{% url 'shop:update_cart' item_id=item.id %}" class="d-flex align-items-center gap-2">{% csrf_token %}
+<input type="number" name="quantity" value="{{ item.quantity }}" min="0" max="99" class="form-control" style="width:70px">
+<button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-arrow-repeat"></i></button></form></td>
+<td class="fw-bold">${{ item.subtotal|floatformat:2 }}</td>
+<td><form method="post" action="{% url 'shop:remove_from_cart' item_id=item.id %}">{% csrf_token %}
+<button type="submit" class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button></form></td></tr>{% endfor %}</tbody>
+<tfoot><tr class="fw-bold"><td colspan="3" class="text-end">{% trans "Total" %}:</td><td>${{ cart_total|floatformat:2 }}</td><td></td></tr></tfoot></table></div>
+<div class="d-flex justify-content-between mt-4"><a href="{% url 'shop:product_list' %}" class="btn btn-outline-primary"><i class="bi bi-arrow-left me-2"></i>{% trans "Continue Shopping" %}</a>
+<a href="{% url 'shop:checkout' %}" class="btn btn-accent btn-lg">{% trans "Proceed to Checkout" %} <i class="bi bi-arrow-right ms-2"></i></a></div>
+{% else %}<div class="text-center py-5"><i class="bi bi-cart3 display-1 text-muted mb-3 d-block"></i><h4>{% trans "Your cart is empty" %}</h4>
+<a href="{% url 'shop:product_list' %}" class="btn btn-primary mt-3">{% trans "Browse Products" %}</a></div>{% endif %}</div></section>{% endblock %}

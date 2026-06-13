@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% trans "My Orders" %}{% endblock %}
+{% block content %}
+<section class="page-header py-5"><div class="container text-center text-white"><h1 class="display-5 fw-bold">{% trans "My Orders" %}</h1></div></section>
+<section class="py-5"><div class="container"><div class="row justify-content-center"><div class="col-md-6 mb-4">
+<form method="post" class="input-group">{% csrf_token %}<input type="email" name="email" class="form-control" value="{{ search_email }}" placeholder="{% trans 'Enter your email to find orders' %}"><button type="submit" class="btn btn-primary"><i class="bi bi-search me-2"></i>{% trans "Search" %}</button></form></div></div>
+{% if orders %}<div class="row justify-content-center"><div class="col-md-8">{% for order in orders %}<div class="card border-0 shadow-sm mb-3"><div class="card-body d-flex justify-content-between align-items-center"><div><h6 class="mb-1">{% trans "Order" %} #{{ order.id }}</h6><small class="text-muted">{{ order.created_at|date:"Y-m-d H:i" }}</small><span class="badge bg-success ms-2">{{ order.get_status_display }}</span></div><div class="text-end"><p class="fw-bold mb-1">${{ order.total|floatformat:2 }}</p><a href="{% url 'shop:order_detail' pk=order.id %}" class="btn btn-sm btn-outline-primary">{% trans "Details" %}</a></div></div></div>{% endfor %}</div></div>{% endif %}</div></section>{% endblock %}

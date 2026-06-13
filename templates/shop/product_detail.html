@@ -1,0 +1,19 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{{ product.name_en }}{% endblock %}
+{% block content %}
+<section class="py-3 bg-light border-bottom"><div class="container"><nav aria-label="breadcrumb"><ol class="breadcrumb mb-0">
+<li class="breadcrumb-item"><a href="{% url 'shop:home' %}">{% trans "Home" %}</a></li>
+<li class="breadcrumb-item"><a href="{% url 'shop:product_list' %}">{% trans "Products" %}</a></li>
+<li class="breadcrumb-item active">{{ product.name_en }}</li></ol></nav></div></section>
+<section class="py-5"><div class="container"><div class="row g-5">
+<div class="col-md-6"><div class="product-image-wrapper">
+{% if product.image %}<img src="{{ product.image.url }}" class="img-fluid rounded shadow" alt="{{ product.name_en }}" data-fallback="{{ product.name_en }}">
+{% else %}<div class="product-img-fallback-lg">{{ product.name_en }}</div>{% endif %}</div></div>
+<div class="col-md-6"><span class="badge bg-primary mb-2">{{ product.category.name_en }}</span>
+<h2 class="fw-bold mb-2">{{ product.name_en }}</h2><p class="text-muted small">{{ product.name_zh }}</p>
+<h3 class="text-accent fw-bold mb-4">${{ product.price|floatformat:2 }}</h3>
+<form method="post" action="{% url 'shop:add_to_cart' product_id=product.id %}">{% csrf_token %}
+<div class="row g-2"><div class="col-auto"><input type="number" name="quantity" value="1" min="1" max="{{ product.stock }}" class="form-control" style="width:80px"></div>
+<div class="col-auto"><button type="submit" class="btn btn-accent"><i class="bi bi-cart-plus me-2"></i>{% trans "Add to Cart" %}</button></div></div>
+<p class="small text-muted mt-2">{% trans "Stock" %}: {{ product.stock }}</p></form></div></div></div></section>
+{% endblock %}

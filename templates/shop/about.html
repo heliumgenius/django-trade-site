@@ -1,0 +1,13 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% trans "About Us" %}{% endblock %}
+{% block content %}
+<section class="page-header py-5"><div class="container text-center text-white"><h1 class="display-5 fw-bold">{% trans "About Us" %}</h1></div></section>
+<section class="py-5"><div class="container"><div class="row justify-content-center"><div class="col-lg-8">
+<h4 class="fw-bold mb-4">{% trans "Huaxin Precision Machinery" %}</h4>
+<p class="lead text-muted">{% trans "Founded in 2010, specializing in CNC machining centers, CNC lathes, and high-end equipment. Products exported to 30+ countries. ISO 9001:2015 certified with 20+ national patents." %}</p>
+</div></div></div></section>
+<section class="py-5 bg-light"><div class="container"><h2 class="text-center fw-bold mb-5">{% trans "Why Choose Us" %}</h2><div class="row g-4">
+<div class="col-md-4"><div class="card h-100 border-0 text-center shadow-sm feature-card"><div class="card-body py-5"><i class="bi bi-gear display-3 text-primary mb-3 d-block"></i><h5 class="fw-bold">{% trans "High Precision" %}</h5><p class="text-muted small">{% trans "Accuracy up to 0.002mm" %}</p></div></div></div>
+<div class="col-md-4"><div class="card h-100 border-0 text-center shadow-sm feature-card"><div class="card-body py-5"><i class="bi bi-shield-check display-3 text-primary mb-3 d-block"></i><h5 class="fw-bold">{% trans "Certified Quality" %}</h5><p class="text-muted small">{% trans "ISO 9001:2015 certified" %}</p></div></div></div>
+<div class="col-md-4"><div class="card h-100 border-0 text-center shadow-sm feature-card"><div class="card-body py-5"><i class="bi bi-globe2 display-3 text-primary mb-3 d-block"></i><h5 class="fw-bold">{% trans "Global Service" %}</h5><p class="text-muted small">{% trans "20+ countries, 48h response" %}</p></div></div></div>
+</div></div></section>{% endblock %}
