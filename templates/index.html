@@ -24,8 +24,8 @@
 <p class="text-accent fw-bold mb-2">${{ p.price|floatformat:0 }}</p>
 <a href="{% url 'shop:product_detail' slug=p.slug %}" class="btn btn-outline-primary btn-sm">{% trans "View Details" %}</a>
 </div></div></div>{% endfor %}</div></div></section>
-<section class="cta-banner py-5 text-white text-center"><div class="container">
+<section class="cta-banner py-5 text-center"><div class="container">
 <h3 class="fw-bold mb-3">{% trans "Get a Quote" %}</h3>
-<p class="mb-4 text-white-50">{% trans "Contact us for pricing and technical specifications" %}</p>
+<p class="mb-4 text-secondary">{% trans "Contact us for pricing and technical specifications" %}</p>
 <a href="{% url 'shop:contact' %}" class="btn btn-accent btn-lg px-5"><i class="bi bi-envelope-paper me-2"></i>{% trans "Contact Us" %}</a>
 </div></section>{% endblock %}

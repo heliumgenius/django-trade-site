@@ -12,8 +12,8 @@ class Category(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        verbose_name = _("分类")
-        verbose_name_plural = _("分类")
+        verbose_name = _("Category")
+        verbose_name_plural = _("Categories")
         ordering = ["order", "id"]
 
     def __str__(self):
@@ -23,7 +23,7 @@ class Category(models.Model):
 class Product(models.Model):
     category = models.ForeignKey(
         Category, on_delete=models.CASCADE,
-        related_name="products", verbose_name=_("分类")
+        related_name="products", verbose_name=_("Category")
     )
     name_zh = models.CharField(_("Name (Chinese)"), max_length=200)
     name_en = models.CharField(_("Name (English)"), max_length=200)
